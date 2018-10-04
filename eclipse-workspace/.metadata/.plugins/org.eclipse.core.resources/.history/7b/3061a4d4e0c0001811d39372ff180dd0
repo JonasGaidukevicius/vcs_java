@@ -1,0 +1,17 @@
+package lt.vcs.andrius.playground;
+
+public class Main {
+	
+	
+	
+	public static void main(String [] argv) {
+		
+		KitaKlase obj = new KitaKlase();
+		
+		obj.objektoKintamasis = 9;
+		
+		
+		
+	}
+
+}

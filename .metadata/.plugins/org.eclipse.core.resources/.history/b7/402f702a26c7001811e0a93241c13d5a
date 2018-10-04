@@ -1,0 +1,14 @@
+package lt.gaidukevicius;
+
+public class SurioPica extends Pica {
+	
+	
+	public SurioPica(int padas, int suris, int grybai, int kumpis, int desra, int padazas){
+		this.setPadas(padas);
+		this.setSuris(suris);
+		this.setGrybai(grybai);
+		this.setKumpis(kumpis);
+		this.setDesra(desra);
+		this.setPadazas(padazas);
+	}
+}

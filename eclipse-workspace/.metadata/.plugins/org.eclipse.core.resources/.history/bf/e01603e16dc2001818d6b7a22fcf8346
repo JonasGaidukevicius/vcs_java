@@ -1,0 +1,8 @@
+package lt.vcs.andrius.interfaces;
+
+public interface Test {
+
+default void getTest() {
+	
+}
+}

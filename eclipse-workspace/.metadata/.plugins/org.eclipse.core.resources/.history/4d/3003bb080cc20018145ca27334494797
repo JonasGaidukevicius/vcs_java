@@ -1,0 +1,42 @@
+package lt.vcs.andrius.testas10;
+
+interface ABC {
+	public void sayAbc();
+}
+interface DEF {
+	public void sayAbc();
+}
+class A implements ABC {
+	public void sayAbc() {
+		System.out.println("abc!");
+	}
+}
+class B extends A {
+	public void soyAbc() {
+		super.sayAbc();
+		System.out.println("ABC!");
+	}
+}
+class C extends A implements DEF {
+	public void sayAbc() {
+		System.out.println("ABC!");
+	}
+}
+public class Testas16 {
+	public static void say(Object o) {
+		if (o == null)
+			return;
+		if (o instanceof A) System.out.println("A");
+		if (o instanceof B) System.out.println("B");
+		if (o instanceof C) System.out.println("C");
+		if (o instanceof ABC) System.out.println("ABC");
+		if (o instanceof DEF) System.out.println("DEF");
+	}
+
+	public static void main(String[] argv) {
+		ABC[] m = { new A(), new B(), new C(), null };
+		for (ABC abc : m) {say(abc);}
+	}
+}
+
+

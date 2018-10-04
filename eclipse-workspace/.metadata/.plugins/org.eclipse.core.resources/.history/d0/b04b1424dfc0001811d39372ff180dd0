@@ -1,0 +1,17 @@
+package lt.vcs.andrius.sandbox;
+
+public class Main {
+	
+	
+	
+	public static void main(String [] argv) {
+		
+		KitaKlase obj = new KitaKlase();
+		
+		obj.objektoKintamasis = 9;
+		
+		
+		
+	}
+
+}

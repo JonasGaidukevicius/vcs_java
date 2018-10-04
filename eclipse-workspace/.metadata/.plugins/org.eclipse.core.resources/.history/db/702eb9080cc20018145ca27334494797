@@ -1,0 +1,43 @@
+package lt.vcs.andrius.testas11;
+
+interface ABC {
+	public void sayAbc();
+}
+
+class A implements ABC {
+	public void sayAbc() {
+		System.out.println("abc!");
+	}
+}
+
+class B extends A {
+	public void sayAbc() {
+		super.sayAbc();
+		System.out.println("ABC!");
+	}
+}
+
+class C extends A {
+	public void sayAbc() {
+		System.out.println("!!!");
+	}
+}
+
+public class Testas17 {
+	public static void main(String[] argv) {
+		ABC[] m = { null, new A(), new B(), new C() };
+		try {
+			for (int i = 0; i <= m.length; i++) {
+				try {
+					m[i].sayAbc();
+				} catch (NullPointerException e) {
+					System.err.println("000");
+				}
+			}
+		} catch (IndexOutOfBoundsException e) {
+			System.err.println("-1");
+		}
+	}
+}
+
+

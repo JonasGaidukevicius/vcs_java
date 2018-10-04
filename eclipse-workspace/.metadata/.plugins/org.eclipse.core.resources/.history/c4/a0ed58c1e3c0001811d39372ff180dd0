@@ -1,0 +1,26 @@
+package lt.vcs.andrius.playground;
+
+public class Kamuolys {
+	
+	protected int svoris;
+	private String spalva;
+	private double skersmuo;
+	// kamuolio turis
+	
+	public Kamuolys(int svoris, String spalva, double skersmuo) {
+		this.svoris = svoris;
+		this.spalva = spalva;
+		this.skersmuo = skersmuo;
+		// skaiciuok turi
+	}
+
+	public Kamuolys(int svoris) {
+		this(svoris, "Juoda2", 1.26);
+	}
+	
+	public Kamuolys() {
+		this(99);
+	}
+	
+	
+}

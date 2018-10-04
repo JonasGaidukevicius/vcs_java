@@ -1,0 +1,52 @@
+package lt.vcs.andrius.playground;
+
+public class Kamuolys {
+	
+	{
+		System.out.println("Inicializavimo pradzia");
+	}
+	
+	
+	
+	private Kamuolys(int svoris, String spalva, double skersmuo) {
+		if(svoris > this.svoris) {
+			this.svoris = svoris;
+		}
+		
+		this.spalva = spalva;
+		this.skersmuo = skersmuo;
+		test();
+		System.out.println("3 parametru Kamuolio konstruktorius pabaiga");
+		
+		
+	}
+
+	public Kamuolys(int svoris) {
+		this(svoris, "Juoda2", 1.26);
+		System.out.println("1 parametru Kamuolio konstruktorius pabaiga");
+
+	}
+	
+	public Kamuolys() {
+		this(99);
+		System.out.println("0 parametru Kamuolio konstruktorius pabaiga");
+	}
+	
+	public void test() {
+		System.out.println("test metodas");
+	}
+	
+	
+	protected int svoris = 99;
+	private String spalva;
+	private double skersmuo;
+	// kamuolio turis
+	
+	{
+		System.out.println(svoris);
+		System.out.println(spalva);
+		System.out.println(skersmuo);
+	}
+	
+	
+}

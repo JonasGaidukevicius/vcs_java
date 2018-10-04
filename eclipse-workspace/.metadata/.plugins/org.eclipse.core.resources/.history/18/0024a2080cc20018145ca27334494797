@@ -1,0 +1,36 @@
+package lt.vcs.andrius.testas8;
+
+
+interface ABC{
+	public void sayAbc();
+	
+}
+
+class A implements ABC {
+	@Override
+	public void sayAbc() {
+		System.out.println("abc!");
+	}
+	
+	public void sayA(){
+		
+	}
+}
+
+
+public class Testas14 {
+	public static void main(String[] argv) {
+		A a = new A();
+		ABC b = new A();
+	
+		//ABC abc = new ABC();
+		
+		a.sayAbc();
+		b.sayAbc();
+		//abc.sayAbc();
+	}
+}
+
+
+
+

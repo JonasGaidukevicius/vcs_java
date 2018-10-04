@@ -1,0 +1,22 @@
+package lt.vcs.andrius.testas6;
+
+class A {
+	public String toString() {
+		return this.getClass().getName();
+	}
+
+}
+
+class B extends A {}
+
+class C extends B {}
+
+class D extends C {}
+
+public class Testas12 {
+	public static void main(String[] argv) {
+		System.out.println(new A());
+		System.out.println(new B());
+		System.out.println(new D());
+	}
+}

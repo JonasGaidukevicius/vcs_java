@@ -1,0 +1,13 @@
+package lt.vcs.andrius.referencevsvalue;
+
+public class Main {
+	
+	
+	
+	public static void main(String [] argv) {
+		
+		System.out.println(Taskas.skaicius);
+	
+	}
+
+}

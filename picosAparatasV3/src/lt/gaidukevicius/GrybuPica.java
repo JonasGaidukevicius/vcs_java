@@ -1,0 +1,25 @@
+package lt.gaidukevicius;
+
+public class GrybuPica extends Pica {
+	
+	
+	public GrybuPica() {
+		this.setPadas(1);
+		this.setSuris(1);
+		this.setGrybai(0);
+		this.setKumpis(2);
+		this.setDesra(0);
+		this.setPadazas(1);
+	}
+	
+	
+	
+	public GrybuPica(int padas, int suris, int grybai, int kumpis, int desra, int padazas){
+		this.setPadas(padas);
+		this.setSuris(suris);
+		this.setGrybai(grybai);
+		this.setKumpis(kumpis);
+		this.setDesra(desra);
+		this.setPadazas(padazas);
+	}
+}

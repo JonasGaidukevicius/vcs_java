@@ -1,0 +1,29 @@
+package lt.vcs.andrius.testas1;
+
+
+
+public class Uzdavinys5 {
+	
+	class A {
+		int sk = 5;
+		public void printSk(){
+			System.out.println(sk);
+		}
+	}
+
+	class B extends A {
+		public void printSk(){
+			System.out.println(super.sk+sk);
+		}
+	}
+
+	class C extends B {
+		int sk = 3;
+	}
+	
+	public static void main(String[] argv) {
+		new A().printSk();
+		new B().printSk();
+		new C().printSk();
+	}
+}

@@ -1,0 +1,23 @@
+package lt.vcs.andrius.referencevsvalue;
+
+public class Main {
+	
+	
+	
+	public static void main(String [] argv) {
+		
+		Taskas.getSkaicius();
+		
+		Taskas t = new Taskas(7, 9);
+		t.getSkaicius();
+				
+		new Taskas(7, 9);
+		new Taskas(6, 8);
+		
+		Taskas.getSkaicius();
+			
+		
+	
+	}
+
+}

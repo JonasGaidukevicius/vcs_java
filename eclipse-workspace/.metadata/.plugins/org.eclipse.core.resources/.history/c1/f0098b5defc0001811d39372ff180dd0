@@ -1,0 +1,23 @@
+package lt.vcs.andrius.sandbox;
+
+public class Main {
+	
+	
+	public static void didinkReiksme(int sk) {
+		sk++;
+	}
+	
+	public static void main(String [] argv) {
+		
+		int skaicius = 5;
+		
+		System.out.println(skaicius);
+	
+		didinkReiksme(skaicius);
+		
+		System.out.println(skaicius);
+		
+		
+	}
+
+}

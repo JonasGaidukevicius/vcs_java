@@ -1,0 +1,16 @@
+package lt.vcs.andrius.kaimynai;
+
+public class Zmogus {
+	
+	
+	private String vardas;
+	
+	public Zmogus(String vardas) {
+		this.vardas = vardas;
+	}
+	
+	public void kalbek() {
+		System.out.println("Mano vardas:" + vardas);
+	}
+
+}

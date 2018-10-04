@@ -1,0 +1,29 @@
+package lt.vcs.andrius.testas;
+
+
+class Skaicius {
+	public int getSkaicius(){
+		return 6;
+	}
+}
+
+public class Testas7 {
+	public static Skaicius[] sukurkMasyva(){
+		Skaicius[] m = new Skaicius[3-1];
+		for(Skaicius sk : m){
+			sk = new Skaicius();
+		}
+		return m;
+	}
+	public static void main(String [] argv){
+		for(Skaicius sk : sukurkMasyva()){
+			System.out.println(sk.getSkaicius());
+		}
+	}
+}
+
+
+
+
+
+

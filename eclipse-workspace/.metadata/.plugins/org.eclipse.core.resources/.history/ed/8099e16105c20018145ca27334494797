@@ -1,0 +1,9 @@
+package lt.vcs.andrius.testas1;
+
+public class Uzdavinys1 {
+	
+	public static void main(String argv[]) {
+		
+	}
+	
+}

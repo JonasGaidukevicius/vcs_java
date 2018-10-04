@@ -1,0 +1,30 @@
+package lt.vcs.andrius.referencevsvalue;
+
+public class Taskas {
+	
+	static {
+		System.out.println("Statine inicializacija");
+	}
+	
+	public static int getSkaicius() {
+		System.out.println("Skaicius: " + skaicius);
+		return skaicius;
+	}
+	
+	public static int skaicius;
+
+	public int x;
+	public int y;
+
+	public Taskas(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+
+	@Override
+	public String toString() {
+		return "Taskas --- [x=" + x + ", y=" + y + "]";
+	}
+
+}

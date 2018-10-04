@@ -1,0 +1,7 @@
+package lt.vcs.andrius.playground;
+
+public class KitaKlase {
+	
+	int objektoKintamasis;
+
+}

@@ -1,0 +1,20 @@
+package lt.vcs.andrius.kaimynai;
+
+import java.util.ArrayList;
+
+public class Zmogus {
+	
+	public List<Zmogus> kaimynai = new ArrayList<>();
+	
+	
+	private String vardas;
+	
+	public Zmogus(String vardas) {
+		this.vardas = vardas;
+	}
+	
+	public void kalbek() {
+		System.out.println("Mano vardas:" + vardas);
+	}
+
+}

@@ -1,0 +1,9 @@
+package lt.gaidukevicius;
+
+public class Pica {
+	
+	 Pica(){
+		 
+	 }
+
+}

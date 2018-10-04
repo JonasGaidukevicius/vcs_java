@@ -1,0 +1,6 @@
+package lt.vcs.andrius.referencevsvalue;
+
+public class Taskas {
+  public int x;
+  public int y;
+}

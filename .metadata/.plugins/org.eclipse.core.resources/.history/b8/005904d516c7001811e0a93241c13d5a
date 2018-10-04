@@ -1,0 +1,28 @@
+package lt.gaidukevicius;
+
+import java.util.Scanner;
+
+public class KlientoSasaja {
+
+	public static void main(String[] args) {
+		int pasirinkimas = 0;
+		pasirinkimas = kokiaPicaRenkates();
+		System.out.println(pasirinkimas);
+	}
+	
+	public static int kokiaPicaRenkates() {
+		Scanner input = new Scanner(System.in);
+		int pasirinkimas = -2;
+		while (pasirinkimas < -1 || pasirinkimas > 3) {
+			System.out.println("Kokios picos noretumete?");
+			System.out.println("Surio pica (1) | Grybu pica (2) | Kumpio pica (3) | Servisas (0) | Iseiti is programos (-1)");
+			pasirinkimas = input.nextInt();
+			if(pasirinkimas < -1 || pasirinkimas > 3) {
+				System.out.println("Netinkamas pasirinkimas");
+			}
+		}	
+		return pasirinkimas;
+		
+	}
+
+}

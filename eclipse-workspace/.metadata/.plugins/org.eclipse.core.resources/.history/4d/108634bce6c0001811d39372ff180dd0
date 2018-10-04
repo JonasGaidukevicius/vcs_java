@@ -1,0 +1,37 @@
+package lt.vcs.andrius.playground;
+
+public class Kamuolys {
+	
+	protected int svoris = 99;
+	private String spalva;
+	private double skersmuo;
+	// kamuolio turis
+	
+	private Kamuolys(int svoris, String spalva, double skersmuo) {
+		if(svoris > this.svoris) {
+			this.svoris = svoris;
+		}
+		
+		this.spalva = spalva;
+		this.skersmuo = skersmuo;
+	}
+
+	public Kamuolys(int svoris) {
+		this(svoris, "Juoda2", 1.26);
+	}
+	
+	public Kamuolys() {
+		this(99);
+	}
+	
+	public void test() {
+		System.out.println("test metodas");
+	}
+	
+	
+
+	
+	
+	
+	
+}

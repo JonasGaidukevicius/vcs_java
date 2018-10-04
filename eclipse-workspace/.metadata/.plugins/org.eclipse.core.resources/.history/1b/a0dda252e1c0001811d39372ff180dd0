@@ -1,0 +1,16 @@
+package lt.vcs.andrius.playground;
+
+public class Kamuolys {
+	
+	protected int svoris;
+	
+	public Kamuolys(int svoris) {
+		this.svoris = svoris;
+	}
+	
+	public Kamuolys() {
+		this.svoris = 99;
+	}
+	
+	
+}

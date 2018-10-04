@@ -1,0 +1,23 @@
+package lt.vcs.andrius.testas1;
+
+class Skaicius {
+	int sk;
+}
+
+public class Uzdavinys4 {
+	
+	
+	
+	
+	private int increment(int sk) {
+		System.out.println(sk++);
+	}
+	
+	private int increment(Skaicius sk) {
+		System.out.println(Skaicius.sk++);
+	}
+
+	public static void main(String argv[]) {
+		
+	}
+}

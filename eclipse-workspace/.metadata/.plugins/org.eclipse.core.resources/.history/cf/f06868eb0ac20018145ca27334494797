@@ -1,0 +1,30 @@
+package lt.vcs.andrius.testas1;
+
+import src2.lt.vcs.andrius.testas4.A;
+import src2.lt.vcs.andrius.testas4.B;
+import src2.lt.vcs.andrius.testas4.C;
+
+class A {
+	int sk = 5;
+	public void printSk(){
+		System.out.println(sk);
+	}
+}
+
+class B extends A {
+	public void printSk(){
+		System.out.println(sk+sk);
+	}
+}
+
+class C extends B {
+	int sk = 3;
+}
+
+public class Uzdavinys 5 {
+	public static void main(String[] argv) {
+		new A().printSk();
+		new B().printSk();
+		new C().printSk();
+	}
+}

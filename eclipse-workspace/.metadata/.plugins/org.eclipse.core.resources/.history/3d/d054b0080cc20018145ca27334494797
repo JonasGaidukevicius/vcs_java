@@ -1,0 +1,25 @@
+package lt.vcs.andrius.testas2;
+
+
+class a {
+	public static int a;
+	public a(){a++;}
+	public a clone(){
+		a a2 = new a();
+		a2.a = a;
+		return a2;
+	}
+}
+
+public class Testas5 {
+	public static void main(String [] argv){
+		a a = new a();
+		a = a.clone().clone();
+		System.out.println(a.a);
+		System.out.println(a.clone().a);
+	}
+}
+
+
+
+

@@ -1,0 +1,10 @@
+package lt.gaidukevicius;
+
+public class SurioPica extends Pica {
+	
+	
+	/* konstruktorius ateiciai)
+	public SurioPica(int padas, int suris, int grybai, int kumpis, int desra, int padazas){
+		
+	}*/
+}

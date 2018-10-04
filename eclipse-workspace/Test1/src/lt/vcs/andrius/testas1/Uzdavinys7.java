@@ -1,0 +1,20 @@
+package lt.vcs.andrius.testas1;
+
+public class Uzdavinys7 {
+
+	public static void printArray(int[] array, int k) {
+
+		for (int i = 0; i < array.length; i = i + k < 0 ? k * -2 : k) {
+			System.out.println(array[i]);
+		}
+	}
+
+	public static void main(String argv[]) {
+
+		int [] m1 = {9,8,2};
+		
+		//printArray(m1,1);
+		printArray(m1,-1);
+		
+	}
+}

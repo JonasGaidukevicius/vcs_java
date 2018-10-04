@@ -1,0 +1,14 @@
+package lt.vcs.andrius.referencevsvalue;
+
+public class Main {
+	
+	
+	
+	public static void main(String [] argv) {
+		Taskas t1 = new Taskas(3, 5);
+		
+		System.out.println(t1.toString());
+	
+	}
+
+}

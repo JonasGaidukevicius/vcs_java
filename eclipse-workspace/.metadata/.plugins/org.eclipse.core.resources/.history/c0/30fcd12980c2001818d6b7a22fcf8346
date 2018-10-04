@@ -1,0 +1,10 @@
+package lt.vcs.andrius.kaimynai;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Zmogus zmogus = new Zmogus("Petras");
+
+	}
+
+}

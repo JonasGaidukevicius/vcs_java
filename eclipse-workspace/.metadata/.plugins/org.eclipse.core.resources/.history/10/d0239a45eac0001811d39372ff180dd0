@@ -1,0 +1,21 @@
+package lt.vcs.andrius.referencevsvalue;
+
+public class Taskas {
+	
+	public static int skaicius;
+
+	public int x;
+	public int y;
+
+	public Taskas(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+
+	@Override
+	public String toString() {
+		return "Taskas --- [x=" + x + ", y=" + y + "]";
+	}
+
+}

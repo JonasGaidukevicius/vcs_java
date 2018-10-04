@@ -1,0 +1,27 @@
+package lt.vcs.andrius.testas1;
+
+public class Uzdavinys9 {
+
+	Uzdavinys9 uzdavinys;
+
+	public Uzdavinys9() {
+		this(1);
+		System.out.println(1);
+	}
+
+	public Uzdavinys9(int i) {
+		this.Uzdavinys9();
+		System.out.println(2);
+	}
+
+	public void Uzdavinys9() {
+		this.uzdavinys = new Uzdavinys9();
+		System.out.println(3);
+	}
+
+	public static void main(String argv[]) {
+		System.out.println(0);
+		
+		new Uzdavinys9();
+	}
+}

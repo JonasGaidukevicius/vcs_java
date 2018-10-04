@@ -1,0 +1,33 @@
+package lt.vcs.andrius.testas7;
+
+class A {
+	public boolean equals(Object o) {
+		return o instanceof A;
+	}
+}
+
+class B extends A {
+}
+
+class C {
+	public boolean equals(Object o) {
+		return o instanceof A;
+	}
+}
+
+class D extends C {
+}
+
+public class Testas13 {
+	public static void main(String[] argv) {
+		A a = new A();
+		B b = new B();
+		C c = new C();
+		System.out.println(a.equals(a));
+		System.out.println(b.equals(a));
+		System.out.println(new D().equals(c));
+		System.out.println(new C().equals(c));
+		System.out.println(c.equals(a));
+	}
+}
+

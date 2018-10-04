@@ -6,8 +6,8 @@ public class GrybuPica extends Pica {
 	public GrybuPica() {
 		this.setPadas(1);
 		this.setSuris(1);
-		this.setGrybai(0);
-		this.setKumpis(2);
+		this.setGrybai(2);
+		this.setKumpis(0);
 		this.setDesra(0);
 		this.setPadazas(1);
 	}
@@ -22,4 +22,6 @@ public class GrybuPica extends Pica {
 		this.setDesra(desra);
 		this.setPadazas(padazas);
 	}
+	
+	
 }

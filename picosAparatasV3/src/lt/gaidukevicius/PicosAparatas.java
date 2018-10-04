@@ -7,7 +7,7 @@ public class PicosAparatas {
 	private int kumpis;
 	private int desra;
 	private int padazas;
-	private int skaitliukas;
+	private int skaitliukas = 0;
 	
 	//konstruktoriusdefault - visi kintamieji yra lygus 0.
 	
@@ -58,6 +58,8 @@ public class PicosAparatas {
 	public boolean gaminuPica(int picosTipas, int picosDydis, PicosProduktai produktuLikuciai) {
 		//CIA DAR TURI PATIKRINTI AR SKAITLIUKAS NERA 20 IR AR NEREIKIA VALYTI AUTOMATO
 		
+		
+		
 		//kokie tos picos produktai
 		if(picosTipas == 1) {
 			SurioPica surioPica = new SurioPica(); 
@@ -67,6 +69,14 @@ public class PicosAparatas {
 			this.kumpis = surioPica.getKumpis();
 			this.desra = surioPica.getDesra();
 			this.padazas = surioPica.getPadazas(); 
+		} else if( picosTipas == 2) {
+			GrybuPica grybuPica = new GrybuPica();
+			this.padas = grybuPica.getPadas();
+			this.suris = grybuPica.getSuris();
+			this.grybai = grybuPica.getGrybai();
+			this.kumpis = grybuPica.getKumpis();
+			this.desra = grybuPica.getDesra();
+			this.padazas = grybuPica.getPadazas(); 
 		}
 		//patikrinti ar tiek produktu yra
 			if(this.padas * picosDydis <= produktuLikuciai.getPadas() && this.suris * picosDydis <= produktuLikuciai.getSuris() &&
@@ -87,10 +97,15 @@ public class PicosAparatas {
 				return false;
 			}
 			if(this.getSkaitliukas() >= 20) {
-				System.out.println("Aparatas iskepe 20 picu. Reikalaingas valymas");
+				System.out.println("Aparatas iskepe 20 picu. Reikalingas valymas");
 			}
 			return true;
-		
-				
 	}
+	
+	public void valauPicosAparata() {
+		this.setSkaitliukas(0);
+		System.out.println("Picos aparatas išvalytas");
+	}
+	
+	
 }

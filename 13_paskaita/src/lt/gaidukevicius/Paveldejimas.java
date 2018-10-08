@@ -14,3 +14,7 @@ public class Paveldejimas {
 	}
 
 }
+
+
+//Testinis komentaras. 2018.10.08.
+//Ar nueis i isorine GIT repozitorija?

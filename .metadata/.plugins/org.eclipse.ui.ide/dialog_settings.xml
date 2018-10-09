@@ -5,6 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Vilnius coding schoo\Desktop\JonasG\vcs_java\picosAparatasV5"/>
 			<item value="C:\Users\Vilnius coding schoo\Desktop\vcs_java\10_paskaita"/>
 			<item value="C:\Users\Vilnius coding schoo\Desktop\vcs_java\09_paskaita"/>
 			<item value="C:\Users\Vilnius coding schoo\Desktop\vcs_java\08_paskaita"/>
@@ -17,5 +18,13 @@
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="381" key="DIALOG_X_ORIGIN"/>
+		<item value="185" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

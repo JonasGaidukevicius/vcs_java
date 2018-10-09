@@ -3,8 +3,15 @@ package lt.gaidukevicius;
 import java.util.Scanner;
 
 public class VartotojoSasaja {
+	
+	
 
 	public static void main(String[] args) {
+		VartotojoSasaja v =new VartotojoSasaja();
+		v.paleiskMeniu();
+	}
+	
+	public void paleiskMeniu() {
 		Servisas servisas = new Servisas();
 		Scanner input = new Scanner(System.in);
 		boolean programaVeikia = true;
@@ -31,7 +38,7 @@ public class VartotojoSasaja {
 	}
 
 	// cia eina 1 pagrindinio meniu pasirinkimas
-	public static void noriuKeptiPica(Servisas servisas) {
+	public void noriuKeptiPica(Servisas servisas) {
 		//Dar nera ispildytas picos aparato pasirinkimas
 		int pasirinkimas = picosPasirinkimas(servisas);
 		if(pasirinkimas != -1) {
@@ -40,7 +47,7 @@ public class VartotojoSasaja {
 		}	
 	}
 
-	public static int picosPasirinkimas(Servisas servisas) {
+	public int picosPasirinkimas(Servisas servisas) {
 		Scanner input = new Scanner(System.in);
 		int pasirinkimas = 0;
 		if(servisas.picuReceptai.size() == 0) {
@@ -68,7 +75,7 @@ public class VartotojoSasaja {
 		
 	}
 
-	public static int dydzioPasirinkimas() {
+	public int dydzioPasirinkimas() {
 		Scanner input = new Scanner(System.in);
 		int dydis = 0;
 		while (dydis < 1 || dydis > 3) {
@@ -84,7 +91,7 @@ public class VartotojoSasaja {
 	}
 
 	// Cia eina 2 pagrindinio meniu pasirinkimas
-	public static void noriuAptarnauti(Servisas servisas) {
+	public void noriuAptarnauti(Servisas servisas) {
 		int servisoTipas = 0;
 		Scanner input = new Scanner(System.in);
 		while (servisoTipas < 1 || servisoTipas > 4) {
@@ -122,7 +129,7 @@ public class VartotojoSasaja {
 
 	
 
-	public static void ivestiNaujaPicosRecepta(Servisas servisas) {
+	public void ivestiNaujaPicosRecepta(Servisas servisas) {
 		// kuriamas picos receptas
 		Scanner input = new Scanner(System.in);
 		System.out.println("Iveskite picos pavadinima: ");
@@ -141,7 +148,7 @@ public class VartotojoSasaja {
 		servisas.atspausdinkPicuReceptus();
 	}
 	
-	public static void ivestiNaujaPicosAparata(Servisas servisas) {
+	public void ivestiNaujaPicosAparata(Servisas servisas) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Iveskite picos aparato pavadinima: ");
 		String picosAparatoPavadinimas = input.nextLine();
@@ -150,7 +157,7 @@ public class VartotojoSasaja {
 	}
 	
 	
-	public static void istrintiPicosAparata(Servisas servisas) {
+	public void istrintiPicosAparata(Servisas servisas) {
 		Scanner input = new Scanner(System.in);
 		if(servisas.picuAparatai.size() == 0) {
 			System.out.println("Nera picu aparatu, kuriuos butu galima istrinti");
@@ -158,7 +165,7 @@ public class VartotojoSasaja {
 			servisas.atspausdinkPicosAparatuSarasa();
 			System.out.print("Kuri picos aparata norite istrinti? ");
 			int choice = input.nextInt();
-			servisas.picuAparatai.remove(choice);
+			servisas.picuAparatai.remove(choice - 1);
 		}	
 	}
 

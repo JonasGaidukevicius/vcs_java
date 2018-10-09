@@ -16,6 +16,7 @@ public class Servisas {
 	
 	public void atspausdinkPicosAparatuSarasa() {
 		for(int i = 0; i < picuAparatai.size(); i++) {
+			System.out.print((i+1) + ". ");
 			picuAparatai.get(i).atspausdinkApieSave();
 		}
 		
@@ -27,6 +28,7 @@ public class Servisas {
 	
 	public void atspausdinkPicuReceptus() {
 		for(int i = 0; i < picuReceptai.size(); i++) {
+			System.out.print((i+1) + ". ");
 			picuReceptai.get(i).atspausdinkApieSave();
 		}
 	}

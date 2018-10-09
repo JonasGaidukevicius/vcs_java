@@ -69,7 +69,7 @@ public class Pica {
 
 	
 	public void atspausdinkApieSave() {
-		System.out.println("Pica: " + picosPavadinimas);
+		System.out.println(picosPavadinimas + " pica.");
 		//System.out.println("Pica: " + picosPavadinimas + " " + padas + " " + suris + " " + grybai + " " + kumpis + " " + padazas);
 		
 	}

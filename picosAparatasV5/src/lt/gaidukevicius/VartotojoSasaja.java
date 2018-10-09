@@ -1,5 +1,5 @@
 package lt.gaidukevicius;
-// REIKIA PICU APARATU KURIMA PADARYTI
+
 import java.util.Scanner;
 
 public class VartotojoSasaja {
@@ -27,66 +27,17 @@ public class VartotojoSasaja {
 					System.out.println("Neteisingas pasirinkimas");
 				}
 			}
-
 		}
-
-		// Zemiau esanti koda reikia perkelti i metodus
-		// kuriamas picos aparatas
-		
-		/*
-		System.out.print("Iveskite picos aparato pavadinima: ");
-		String picosAparatoPavadinimas = input.nextLine();
-		servisas.prideduPicosAparata(picosAparatoPavadinimas);
-
-		// kuriu antra aparata
-		System.out.print("Iveskite antro picos aparato pavadinima: ");
-		picosAparatoPavadinimas = input.nextLine();
-		servisas.prideduPicosAparata(picosAparatoPavadinimas);
-
-		// atspausdinus visus picos aparatus
-		servisas.atspausdinkPicosAparatuSarasa();
-		*/
-
-		/* Sita jau perkeliau kur reikejo
-		// kuriamas picos receptas
-		System.out.println("Iveskite picos pavadinima: ");
-		String picPav = input.nextLine();
-		System.out.println("Iveskite padu kieki: ");
-		int pd = input.nextInt();
-		System.out.println("Iveskite surio kieki: ");
-		int sr = input.nextInt();
-		System.out.println("Iveskite grybu kieki: ");
-		int gr = input.nextInt();
-		System.out.println("Iveskite kumpio kieki: ");
-		int km = input.nextInt();
-		System.out.println("Iveskite padazo kieki: ");
-		int pz = input.nextInt();
-		servisas.prideduPicosRecepta(picPav, pd, sr, gr, km, pz);
-		servisas.atspausdinkPicuReceptus();
-		*/
-
-		System.out.println("Kokios picos noretumete (skaicius)? ");
-		servisas.atspausdinkPicuReceptus();
-		int pasirinkimas = input.nextInt();
-		System.out.println("Kokio dydzio picos noretumete (1 - 3): ");
-		int dydis = input.nextInt();
-		servisas.picuAparatai.get(0).kepuPica(servisas.picuReceptai.get(pasirinkimas - 1), dydis);
-		
-
 	}
 
 	// cia eina 1 pagrindinio meniu pasirinkimas
 	public static void noriuKeptiPica(Servisas servisas) {
-
-		
-		// TODO Jeigu nera receptu turi buti pranesimas, kad susikurk picos recepta is
-		// pradziu
+		//Dar nera ispildytas picos aparato pasirinkimas
 		int pasirinkimas = picosPasirinkimas(servisas);
 		if(pasirinkimas != -1) {
 			int dydis = dydzioPasirinkimas();
 			servisas.picuAparatai.get(0).kepuPica(servisas.picuReceptai.get(pasirinkimas - 1), dydis);
-		}
-		
+		}	
 	}
 
 	public static int picosPasirinkimas(Servisas servisas) {
@@ -159,12 +110,15 @@ public class VartotojoSasaja {
 			servisas.atspausdinkPicosAparatuSarasa();
 			break;
 		case 4:
-			// istrintiPicosAparata();
+			istrintiPicosAparata(servisas);
+			servisas.atspausdinkPicosAparatuSarasa();
 			break;
 		default:
 			System.out.println("Kazkas negerai");
 		}
 	}
+
+	
 
 	
 
@@ -193,6 +147,19 @@ public class VartotojoSasaja {
 		String picosAparatoPavadinimas = input.nextLine();
 		servisas.prideduPicosAparata(picosAparatoPavadinimas);
 		
+	}
+	
+	
+	public static void istrintiPicosAparata(Servisas servisas) {
+		Scanner input = new Scanner(System.in);
+		if(servisas.picuAparatai.size() == 0) {
+			System.out.println("Nera picu aparatu, kuriuos butu galima istrinti");
+		} else {
+			servisas.atspausdinkPicosAparatuSarasa();
+			System.out.print("Kuri picos aparata norite istrinti? ");
+			int choice = input.nextInt();
+			servisas.picuAparatai.remove(choice);
+		}	
 	}
 
 }

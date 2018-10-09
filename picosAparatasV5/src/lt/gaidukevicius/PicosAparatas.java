@@ -23,7 +23,8 @@ public class PicosAparatas {
 	}
 	
 	public void atspausdinkApieSave() {
-		System.out.println(picosAparatoPavadinimas + " " + padas + " " + suris + " " + grybai + " " + kumpis + " " + padazas + " " + skaitliukas);
+		System.out.println("Picos aparatas: " + picosAparatoPavadinimas);
+		//System.out.println("Picos aparatas: " + picosAparatoPavadinimas + " " + padas + " " + suris + " " + grybai + " " + kumpis + " " + padazas + " " + skaitliukas);
 		
 	}
 	

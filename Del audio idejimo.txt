@@ -1,0 +1,9 @@
+Garsu biblioteka:
+https://www.soundsnap.com/tags/swing
+
+
+https://stackoverflow.com/questions/15526255/best-way-to-get-sound-on-button-press-for-a-java-calculator
+
+https://www.javaworld.com/article/2077521/learn-java/java-tip-24--how-to-play-audio-in-applications.html
+
+http://www.edu4java.com/en/game/game7.html

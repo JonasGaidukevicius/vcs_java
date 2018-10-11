@@ -3,9 +3,12 @@ package lt.gaidukevicius;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println(stringMatch("xxcaazz", "xxbaaz"));
+		//System.out.println(stringMatch("xxcaazz", "xxbaaz"));
 		
-
+		if ((ch & 16) != 0) {
+		    screenData[pos] = (short) (ch & 15);
+		    score++;
+		}
 	}
 	
 	public static int stringMatch(String a, String b) {
